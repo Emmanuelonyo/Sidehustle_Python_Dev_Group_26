@@ -5,11 +5,8 @@ def average(class_score,totalstudents):
 #grade function
 def grade(name,avg,newscore):
     if newscore >= 60 and avg-5 < newscore :
-        result = "Congratulation " + name +" You have Passed the exams"
-        return result
-    else:
-        result = "Sorry " + name + " you Failed"
-        return  result
+        return f"Congratulations {name}! You have Passed the exams"
+    return f"Sorry {name} you Failed"
 
 
 students = 3
